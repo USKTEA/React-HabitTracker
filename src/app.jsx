@@ -1,7 +1,18 @@
 import "./app.css";
+import InputForm from "./components/inputForm";
+import Navbar from "./components/nav";
 
 function App() {
-  return <h1>hello wolrd</h1>;
+  return (
+    <>
+      <Navbar />
+      <InputForm />
+      <button></button>
+      <ol>
+        <li></li>
+      </ol>
+    </>
+  );
 }
 
 export default App;
