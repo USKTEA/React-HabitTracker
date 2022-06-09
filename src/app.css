@@ -1,5 +1,15 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: bisque;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 #nav-bar {
@@ -22,4 +32,56 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#input-form {
+  height: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#habit-input {
+  height: 2.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: tomato;
+  border-radius: 2px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#habit-input::placeholder {
+  color: white;
+}
+
+#input-button {
+  height: 2rem;
+  margin-left: 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(255, 196, 47);
+}
+
+#habit-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#habit {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.habit-button {
+  height: 2rem;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
 }
