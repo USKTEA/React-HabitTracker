@@ -85,3 +85,12 @@ button:hover {
   font-size: 1.5rem;
   background-color: transparent;
 }
+
+#reset-button {
+  height: 2rem;
+  margin-left: 35.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(255, 196, 47);
+}

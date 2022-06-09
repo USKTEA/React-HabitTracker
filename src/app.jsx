@@ -64,6 +64,12 @@ class App extends Component {
     this.setState({ habits: lastHabits });
   };
 
+  handleReset = () => {
+    const habits = { habits: [], inputs: this.state.inputs };
+
+    this.setState(habits);
+  };
+
   render() {
     return (
       <>
@@ -73,12 +79,21 @@ class App extends Component {
           handleSubmit={this.handleSubmit}
           value={this.state.inputs}
         />
-        <List
-          habits={this.state.habits}
-          handleIncrement={this.handleIncrement}
-          handleDecrement={this.handleDecrement}
-          handleDelete={this.handleDelete}
-        />
+        {this.state.habits.length > 0 && (
+          <List
+            habits={this.state.habits}
+            handleIncrement={this.handleIncrement}
+            handleDecrement={this.handleDecrement}
+            handleDelete={this.handleDelete}
+          />
+        )}
+        {this.state.habits.length > 0 && (
+          <Button
+            handleClick={this.handleReset}
+            css="reset-button"
+            name="Reset"
+          />
+        )}
       </>
     );
   }
