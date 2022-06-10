@@ -12,6 +12,15 @@ button:hover {
   opacity: 0.8;
 }
 
+span {
+  cursor: pointer;
+}
+
+span:hover {
+  opacity: 0.8;
+  font-size: 2.1rem;
+}
+
 #nav-bar {
   box-sizing: border-box;
   height: 3rem;
@@ -73,9 +82,10 @@ button:hover {
   align-items: center;
 }
 
-#habit {
+.habit {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 2rem;
 }
 
@@ -84,6 +94,12 @@ button:hover {
   margin-left: 0.5rem;
   font-size: 1.5rem;
   background-color: transparent;
+}
+
+.edit-habit-input {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: grey;
 }
 
 #reset-button {

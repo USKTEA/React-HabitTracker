@@ -17,11 +17,13 @@ class App extends Component {
 
   handleChange = (event) => {
     const states = { ...this.state, inputs: event.target.value };
+
     this.setState(states);
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
+
     if (this.state.inputs.length > 0) {
       const states = { habits: [...this.state.habits], inputs: "" };
 
@@ -85,6 +87,7 @@ class App extends Component {
             handleIncrement={this.handleIncrement}
             handleDecrement={this.handleDecrement}
             handleDelete={this.handleDelete}
+            handleEdit={this.handleEdit}
           />
         )}
         {this.state.habits.length > 0 && (
