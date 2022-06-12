@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: bisque;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  opacity: 0.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+  cursor: pointer;
+}
+
+span:hover {
+  opacity: 0.8;
+  font-size: 2.1rem;
+}
+
+#nav-bar {
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 2rem;
+  background-color: teal;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.count-box {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2px;
+  margin-left: 1rem;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#input-form {
+  height: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#habit-input {
+  height: 2.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: tomato;
+  border-radius: 2px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#habit-input::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#input-button {
+  height: 2rem;
+  margin-left: 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(255, 196, 47);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#habit-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.habit-button {
+  height: 2rem;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.edit-habit-input {
+  height: 2rem;
+  font-size: 1.5rem;
+  color: grey;
+}
+
+#reset-button {
+  height: 2rem;
+  margin-left: 35.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(255, 196, 47);
 }
